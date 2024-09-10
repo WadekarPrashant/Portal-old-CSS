@@ -1,0 +1,60 @@
+.p-container {
+  background-color: #00293c;
+  padding: 15px 0px;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.profile-form h2 {
+  grid-column: span 2;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+.profile-form .full-width {
+  grid-column: span 2;
+}
+
+.profile-form input,
+.profile-form select,
+.profile-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.profile-form input:focus,
+.profile-form select:focus,
+.profile-form button:focus {
+  border-color: #00293c;
+  box-shadow: 0 0 8px #00293c;
+  outline: none;
+}
+
+.profile-form button {
+  background: #00293c;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  grid-column: span 2;
+}
+
+.profile-form button:hover {
+  background: #033e59;
+  box-shadow: 0 4px 10px rgba(0, 77, 64, 0.4);
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  grid-column: span 2;
+}
